@@ -1,5 +1,5 @@
 from seleniumbase import BaseCase
-from .baby_object import BoboChoses
+from baby_object import BoboChoses
 
 class NavigationTest(BaseCase):
 
