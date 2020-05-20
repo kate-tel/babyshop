@@ -3,7 +3,7 @@ class BoboChoses(object):
     article = 'article:nth-of-type(1n)'
     quickshop = 'div.quickshop-button '
     drop_down = '#id-slct'
-    option = '#id-slct ul li:nth-of-type(5n)'
+    option = '#id-slct ul li:nth-of-type(2n)'
     add_cart = 'button[class="add-to-cart green large"]'
     p_name = 'p.name'
     checkout = 'a[class="to-checkout white button"]'

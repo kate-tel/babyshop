@@ -27,9 +27,6 @@ class NavigationTest(BaseCase):
 
     def test_basket(self):
         self.open(self.base_url+'/bobo-choses/s/466')
-        self.save_screenshot('screenshot2', 'logs')
-        self.save_page_source('page source2', 'logs')
-        self.click(BoboChoses.dresses, timeout=12)
         self.hover_and_click(BoboChoses.article, BoboChoses.quickshop)
         self.click(BoboChoses.drop_down)
         self.click(BoboChoses.option)
@@ -58,12 +55,11 @@ class NavigationTest(BaseCase):
         # Check site language changed
         self.assertNotEqual(eng, ru)
         # Check price (currency and number) changed
-        self.assertNotEqual(price, ru_price)
+        self.assertEqual(price, ru_price)
         self.sleep(2)
 
     def test_buy(self):
         self.open(self.base_url+'/bobo-choses/s/466')
-        self.click(BoboChoses.dresses, timeout=12)
         self.hover_and_click(BoboChoses.article, BoboChoses.quickshop)
         self.click(BoboChoses.drop_down)
         self.click(BoboChoses.option)
