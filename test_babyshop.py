@@ -27,6 +27,8 @@ class NavigationTest(BaseCase):
 
     def test_basket(self):
         self.open(self.base_url+'/bobo-choses/s/466')
+        self.save_screenshot('screenshot2', 'logs')
+        self.save_page_source('page source2', 'logs')
         self.click(BoboChoses.dresses, timeout=12)
         self.hover_and_click(BoboChoses.article, BoboChoses.quickshop)
         self.click(BoboChoses.drop_down)
