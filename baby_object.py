@@ -8,8 +8,8 @@ class BoboChoses(object):
     p_name = 'p.name'
     checkout = 'a[class="to-checkout white button"]'
     delete = 'a.remove'
-    msg = 'Your cart is empty'
-    DG = 'a[title="Dolce & Gabbana"]'
+    cart_empty = 'Your cart is empty'
+    dolce_gabbana = 'a[title="Dolce & Gabbana"]'
     filter_by = '.filter-label'
     price = 'span.lowest'
     region_change = 'a[href="/country-and-language"]'
@@ -23,23 +23,3 @@ class BoboChoses(object):
     lastName = 'input[name="lastName"]'
     email = 'input[name="emailAddress"]'
     submit = 'button[type="submit"]'
-
-
-
-
-
-
-
-
-
-    
-    # search_box = 'input[title="Search"]'
-    # list_box = '[role="listbox"]'
-    # search_button = 'input[value="Google Search"]'
-    # feeling_lucky_button = '''input[value="I'm Feeling Lucky"]'''
-
-
-# class ResultsPage(object):
-#     google_logo = 'img[alt="Google"]'
-#     images_link = 'link=Images'
-#     search_results = 'div#center_col'
